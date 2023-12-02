@@ -35,8 +35,8 @@ fn main() {
     println!("{}", t);
     println!("{}", f);
 
-    // string
-    println!("------------------------------ string ------------------------------");
+    // char
+    println!("------------------------------ char ------------------------------");
     let c: char = 'c';
     println!("{}", c);
 
@@ -68,4 +68,61 @@ fn main() {
     println!("{}", tup_x);
     println!("{}", tup_y);
     println!("{}", tup_z);
+    
+    // arrays
+    println!("------------------------------ arrays ------------------------------");
+    let array = [1, 2, 3];    
+    println!("{}", array[0]);
+    
+    let mut array2: [i32; 3] = [4, 5, 6];
+    println!("{}", array2[0]);
+    array2[0] = 10;
+    println!("{}", array2[0]);
+    
+    // vectors
+    println!("------------------------------ vectors ------------------------------");
+    let mut nums = vec![1, 2, 3];    
+    
+    nums.push(4);
+    println!("{:?}", nums);
+    
+    nums.pop();
+    println!("{:?}", nums);
+    
+    let mut vec = Vec::new(); // calling vec! constructor
+    vec.push("test");
+    vec.push("string");
+    println!("{:?}", vec);
+    
+    vec.reverse();
+    println!("{:?}", vec);
+    
+    let vec_two: Vec<i32> = Vec::<i32>::with_capacity(2);
+    println!("{:?}", vec_two.capacity());
+    
+    let v: Vec<i32> = (0..5).collect();
+    println!("{:?}", v);
+    
+    let slice_v: &[i32] = &v[2..4];
+    println!("{:?}", slice_v);
+    
+    // Strings
+    println!("------------------------------ Strings ------------------------------");
+    
+    let name: String = String::from("Test");
+    let course: String = "Rust".to_string();
+    let new_name: String = name.replace(&name, "Test 2");
+    println!("{}", name);
+    println!("{}", course);
+    println!("{}", new_name);
+    
+    let str_one = "hello";
+    let str_two = str_one.to_string();
+    let str_three = &str_two;
+    println!("{}", str_one);
+    println!("{}", str_two);
+    println!("{}", str_three);
+    
+    let rust = "\x52\x75\x73\x74";
+    println!("{}", rust);
 }

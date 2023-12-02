@@ -3,6 +3,9 @@ fn main() {
     println!("{}", gcd(20, 5));
     println!("{}", multiple_return_values(true));
     println!("{}", multiple_return_values(false));
+
+    let hello: String = String::from("Hello");
+    println!("{}",concat_string(hello));
 }
 
 fn print_phase(phrase: &str) {
@@ -27,4 +30,8 @@ fn multiple_return_values(flag: bool) -> bool {
     } else {
         false
     }
+}
+
+fn concat_string(string_arg: String) -> String {
+    [string_arg, " World".to_string()].concat()
 }

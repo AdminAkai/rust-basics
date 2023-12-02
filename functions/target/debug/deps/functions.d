@@ -1,0 +1,5 @@
+C:\Users\joshi\OneDrive\Documents\code\study\Rust\rust-basics\functions\target\debug\deps\functions.exe: src\main.rs
+
+C:\Users\joshi\OneDrive\Documents\code\study\Rust\rust-basics\functions\target\debug\deps\functions.d: src\main.rs
+
+src\main.rs:
